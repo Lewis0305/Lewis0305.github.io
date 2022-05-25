@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/.jpg"
+          href="assets/web/951_gaspra.jpg" />
+    <title>Asteroids</title>
+    <script src="index.js"defer></script>
+
+</head>
+<body id="game-body">
+    <header>
+        <div class="site-img-container">
+            <img src="assets/web/951_gaspra.jpg" alt="game-logo" />
+        </div>
+        <h1 class="site-title"><a href="homepage.html">Asteroids</a></h1>
+    </header>
+
+    <canvas id="User" position: absolute;></canvas>
+    <script src="render.js" defer></script>
+
+    <div class="game-info">
+        <div id="power-ups-div">
+            <div class="lvl-title">
+                Level:
+            </div>
+            <div id="lvl-count">
+                0
+            </div>
+        </div>
+        <div id="score-div">
+            <div class="score-title">
+                Score:
+            </div>
+            <div id="score-count">
+                0
+            </div>
+        </div>
+    </div>
+    <div class="game-over" id="modal">
+        <h1 class="over-heading">Game Over!</h1>
+        <div id="input-highscore-div">
+            <label for="name-input">Enter Your Name:</label>
+            <input type="text" id="name-input">
+            <button type="button" class="modal-button" id="input-username-button" onclick="">
+                Input Name
+            </button>
+        </div>
+
+
+        <a href="homepage.html" class="modal-button" >Go Back</a>
+        <button type="button" class="modal-button" id="play-again" onclick="startAgain()">
+            Play Again
+        </button>
+    </div>
+</body>
+</html>
