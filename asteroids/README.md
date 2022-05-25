@@ -1,1 +1,1 @@
-https://lewis0305.github.io/asteroids/game.html
+https://lewis0305.github.io/asteroids/asteroids.html
